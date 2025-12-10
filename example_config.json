@@ -1,0 +1,59 @@
+{
+  "test_mode": false,
+  "fast_mode": false,
+  "use_gpu": true,
+  "n_jobs": -1,
+  "random_seed": 42,
+  
+  "use_tracking_data": false,
+  "use_odds_api": false,
+  "use_sentiment": false,
+  "use_weather": false,
+  
+  "data_dir": "data",
+  "output_dir": "outputs",
+  "cache_dir": "cache",
+  
+  "leagues": [
+    "Premier League",
+    "La Liga",
+    "Serie A",
+    "Bundesliga",
+    "Ligue 1"
+  ],
+  
+  "seasons": [
+    "2021-2022",
+    "2022-2023",
+    "2023-2024"
+  ],
+  
+  "rolling_windows": [3, 5, 10],
+  "min_matches_for_features": 5,
+  
+  "models_to_train": [
+    "poisson",
+    "xgboost",
+    "lightgbm",
+    "random_forest",
+    "lstm",
+    "hmm",
+    "ensemble"
+  ],
+  
+  "max_model_trials": 50,
+  "retrain_frequency": 10,
+  
+  "train_test_split_date": "2023-01-01",
+  "walk_forward_window": 100,
+  "walk_forward_step": 10,
+  
+  "min_edge_threshold": 0.05,
+  "max_bet_fraction": 0.05,
+  "kelly_fraction": 0.25,
+  "bookmaker_margin": 0.05,
+  
+  "odds_api_key": null,
+  "news_api_key": null,
+  "weather_api_key": null
+}
